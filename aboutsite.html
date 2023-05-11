@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>React</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    
+    <h2 class="top-margin">Contact Form</h2>
+
+    <form>
+      
+      <div class="row">
+        <label>First Name:
+          <input type="text" placeholder="Write your first name..." id="first-name" required>
+        </label>
+        
+        <label>Last Name:
+          <input type="text" placeholder="Write your last name..." id="last-name" required>
+        </label>
+      </div>
+        
+      <div class="row">
+        <label>Age:
+          <input type="number" min="6" max="90" step="1" value="18" id="age" required>
+        </label>
+
+        <label>Country:
+          <select id="country"> 
+            <option selected>Saudi Arabia</option>
+            <option>China</option>
+            <option>USA</option>
+            <option>UK</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>Message:<br>
+          <textarea rows="4" cols="36" placeholder="Write the message here..." id="message" required></textarea>
+        </label>
+      </div>
+
+      <div class="row">
+        <input type="submit" value="Submit" onclick="sendEmail()">
+      </div>
+
+    </form>
+
+    <script src="js/index.js"></script>
+  </body>
+
+</html>
